@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The Data You Provide Below will be used for your Email Reports" />
+
+        <TextView
+            android:id="@+id/TextView_YourName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Name" />
+
+        <EditText
+            android:id="@+id/EditText_YourName"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:maxLength="20"
+            android:maxLines="1" />
+
+        <TextView
+            android:id="@+id/TextView_targetEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Target Email Id " />
+
+        <EditText
+            android:id="@+id/EditText_targetEmail"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:inputType="text|textEmailAddress"
+            android:maxLines="1" />
+    
+     <Button
+         android:id="@+id/Button_Save"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center_horizontal"
+         android:onClick="onSaveClicked"
+         android:text="SAVE" />
+
+</LinearLayout>
